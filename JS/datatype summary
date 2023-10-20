@@ -1,0 +1,51 @@
+// Data is classified into Primitive and Non Primitive
+
+// types of Primitive data
+// 7 types - String, Number, boolean, null, undefined, symbol, BigInt ;
+
+
+//Non Primitive data (reference)
+
+//types -  array ,objects , function
+
+//*************uses of Symbol*************
+//symbol is used to keep the data unique. and used to keep unique and 
+// important data like- id, password
+let id = Symbol('123')
+
+let anotherId = Symbol('123')
+
+console.log(typeof anotherId);
+console.log(id === anotherId); //output = false
+
+
+
+let bigNumber = 23356788908765432345656n
+
+console.log(typeof bigNumber); ////output = bigInt
+
+
+//*************Arrays***********
+//thing surrounded by square braces are array
+let heroes = ["ironman", "Shaktiman", "Thor"]
+
+console.log(heroes);
+
+console.log(typeof heroes);
+
+//******************objects */
+
+//things enclosed with curly braces are objects
+
+let myObj = {
+    name:"Abhishek",
+    Age: 25,
+    City: "Varanasi"
+}
+
+console.log(myObj);
+
+console.log(typeof myObj);
+
+//all non primitive data types return object as type of
+// except function i.e. (function object )
