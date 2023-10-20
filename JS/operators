@@ -1,0 +1,40 @@
+let aNumber = 88
+
+let value = 33
+
+console.log(value);
+
+console.log(2+2);  //addition
+console.log(2-2);  //substraction
+console.log(2*2);  //multiplication
+console.log(2/2);  //division
+console.log(4%3);  //remender, modulus
+console.log(2**3); //
+
+
+let str1 = "Hi"
+
+let str2 = " Abhishek"
+
+let str3 = str1 + str2   //string Concatination
+console.log(str3);
+
+//if string is added to the  number and first input is 
+// string then whole will be treated as string
+
+console.log("3" + 5);
+
+// if number is added to the string and
+// first input is number then whole will be treated as number
+
+console.log(5 + 2 + "3");
+ //first two digits are added and last digits is concatinated
+
+
+//*******************Conversion*************//
+
+
+console.log(true); // output = true
+
+console.log(+true); // output = 1
+
