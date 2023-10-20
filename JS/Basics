@@ -1,2 +1,7 @@
 //Hi this is first JS file
 //we will cover basics in this sort
+
+// we can use console.log() to print our value in console window
+// we can use console.window() to print our value on window screen
+// we can use console.warn() method to write a warning message in the console
+//
