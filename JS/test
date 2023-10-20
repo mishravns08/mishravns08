@@ -1,0 +1,16 @@
+const accountId = 12345
+let accountEmail = "mishra@gmail.com"
+var accountPassword = "0000"
+accountCity = "Jaipur"
+let accountState
+// accountId = 2 // not allowed
+console.log(accountId);
+console.table([accountEmail, accountId, accountPassword, accountCity, accountState]);
+
+/* 
+not prefer to use VAR because of issue in block scope and functional scope
+*/
+
+// let = can be re-assigned but can't re-declared , it has block scope
+// var =  can be re-assIgned and re-declared,  it has globally and functionally scope
+// const =  neither re-assigned nor re-declared, it has block scope
