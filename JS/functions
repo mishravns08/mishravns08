@@ -1,0 +1,6 @@
+const myFun = function(){
+    console.log("hello hi")
+}
+myFun();
+
+console.log(typeof myFun); //output = function
