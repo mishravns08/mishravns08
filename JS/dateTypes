@@ -1,0 +1,15 @@
+console.log("Hi")
+
+let name = "Abhishek"  //string datatype
+let age = 24 // number
+
+let isLoggedIn =  false // boolean
+
+
+//number => 2 to power 53
+//bigint
+//string => ""
+//boolean => true/false 
+//null -  is a standalone value
+// undefined is a valued that is not defined
+//symbol => unique
