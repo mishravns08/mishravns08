@@ -1,0 +1,39 @@
+// stack (primitive), Heap(non-primitive)
+
+
+
+let myName = "Abhishek"
+
+let altName = myName
+
+console.log(altName);  //output = Abhishek
+
+//this will throw the value of assigned variable
+//since stack data structure
+
+let anName = "Mishra"
+
+let bnName = anName
+ bnName = "Kumar"
+
+console.log(bnName); // output =  kumar
+//This happend because the variable "bnName" was only holding the
+//copy of value of variable "anName"
+
+
+
+//**********heap */
+
+let user1 = {
+    email: "abhi@gmail.com",
+    upi: "abhi@ybl"
+}
+
+let user2 = user1
+user2.email = "mishra@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
+//value will be changed in original variable
+// becasue new variable have refernce to the original one 
