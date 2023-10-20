@@ -1,0 +1,55 @@
+const array = [0,1,2,3,4,5,6]
+console.log(array); // 0,1,2,3,4,5,6
+
+//array methods
+//push
+
+array.push(9)
+console.log(array);   //0, 1, 2, 3, 4, 5, 6
+
+//pop
+
+array.pop(4)
+console.log(array);
+
+const marvel_heros = ["thor", "Ironman", "Spiderman"]
+const dc_heros = ["superman","flash","batman"]
+
+marvel_heros.push(dc_heros)
+
+console.log(marvel_heros);
+
+
+//spread operator
+
+const all_new_heros = [...marvel_heros,...dc_heros]
+console.log(all_new_heros);
+
+
+const another_array = [1,2,3,[4,5,6],7,8,[9,10,[11,12]]]
+
+const real_another_array = another_array.flat(Infinity)
+
+console.log(real_another_array);
+
+
+//how to make the array
+
+console.log(Array.isArray("Abhishek"))  //output = false
+console.log(Array.from("Abhishek"));  //output = ['A', 'b', 'h','i', 's', 'h','e', 'k']
+
+//JS returns keys as a empty array
+
+console.log(Array.from({name : "Abhishek"}));  //output = ['A', 'b', 'h','i', 's', 'h','e', 'k'][]
+
+
+//how to create array from different values and arrays
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+let arr2 = ["ab","cd","ef"]
+console.log(Array.of(score1, score2, score3,arr2));  //output = [ 100, 200, 300, [ 'ab', 'cd', 'ef' ] ]
+
+
