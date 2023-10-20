@@ -1,0 +1,43 @@
+let score = 400
+console.log(score); // output = 400
+
+let balance = new Number(100) //here new is used to define new object
+
+console.log(balance); // output = [Number: 100]
+
+//to convert Number into String
+
+console.log(balance.toString().length); // output = 3
+
+console.log(typeof balance);
+console.log(balance.toPrecision(2));
+
+console.log();
+
+
+//***************** Maths Library***********************
+
+let num1 = 55
+let num2 = 66
+
+console.log(Math.round(4.6));  // output = 5 (since it takes round value to floor i.e. next maximum round number )
+console.log(Math.ceil(4.6)); // output = 5 (since it takes maximum value to next whole number)
+console.log(Math.floor(4.6)); // output = 4 (because it takes low value to the integer)
+console.log(Math.abs(-4));  // output = 4 because it returns absolute value i.e. positive value if the given number is negative
+
+
+console.log(Math.min(4,3,6,7,8,9,23,54)); // output = 3 (it returns minimum value in the given argument)
+
+console.log(Math.max(54,768,4345,676768,3)); // output = 67678 (it returns maximum value in the given argument)
+
+//********************Random number generator******
+
+console.log(Math.ceil(Math.random()));  // returns = 1 as using ceil and random function
+
+
+console.log(Math.random());
+
+// console.log(Math.random(50 ,100));
+
+
+
