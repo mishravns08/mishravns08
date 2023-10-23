@@ -1,0 +1,49 @@
+// singleton
+
+//object literals
+const mySym = Symbol("key1")
+const Auser = {
+    name: "Abhishek",
+    age: 18,
+    "full name": "Abhishek Mishra",
+    location: "VNS",
+    [mySym]: "myKey1",   //symbols are taken only in square bracket, if not taken then it behave like string
+    email: "abc@gmail.com",
+    isLoggedIn: false,
+    lastLoginDays: ["monday", "saturday"]
+    }
+    
+    console.log(Auser.email) // these are access method of object elements
+    console.log(Auser.name)  
+    console.log(Auser["email"]);  // this is 2nd access method of object elements
+    console.log(Auser["full name"]);
+    console.log(Auser[mySym]); //output = myKey1
+
+// to change the value in the objects
+
+Auser.email = "Abhi@gmail.com"
+
+console.log(Auser.email);  // output =Abhi@gmail.com
+
+//to freez the value in object
+//so none can change the value
+
+//Object.freeze(Auser)  // i commented to execute function in object
+Auser.email = "Abhi@microsoft.com"
+
+console.log(Auser.email); // output = Abhi@gmail.com ---> here value is unchanged
+
+console.log(Auser);
+
+Auser.greeting = function() {
+    console.log("Hello JS User");
+    
+}
+console.log(Auser.greeting());
+
+Auser.greetingTwo = function() {
+  console.log(`Hello JS user, ${this.name}`);  // here backtick is used -->`, not single quote
+  // output =   Hello JS user, Abhishek
+} 
+
+console.log(Auser.greetingTwo());
