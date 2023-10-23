@@ -1,0 +1,37 @@
+// singleton
+
+//const tinderUser = new Object(); // this is ingleton object
+
+const tinderUser = {} // this is non singleton object 
+
+tinderUser.id = "123abc"
+tinderUser.name = "sammy"
+tinderUser.isLoggedIn= false 
+
+// we can make object in the object, nested object is possible
+const regularUser = {
+    email: "xyz@gmail.com",
+    fullname: {
+        userFullName: {
+            firstname: "Abhi",
+            lastname: "Mishra"
+        }
+    }
+}
+console.log(regularUser.fullname.userFullName);
+// output = { firstname: 'Abhi', lastname: 'Mishra' }
+
+
+// merging of the objects
+
+const obj1 = {1: "a",2: "b"}
+const obj2 = {3: "c", 4: "d"}
+
+const obj3 = {obj1, obj2}
+console.log(obj3);
+// output = { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
+// this will make object in the object
+
+const obj4 = Object.assign(obj1,obj2)
+console.log(obj4); // output = { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+
